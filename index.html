@@ -5,109 +5,112 @@
     <title>SAP S/4HANA Enterprise Structure Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
 <header>
     <h1>SAP S/4HANA Enterprise Structure</h1>
-    <p>End-to-End Demo for All SAP Modules</p>
+    <p>End-to-End Demo for All SAP Modules (FI, CO, MM, SD, PP, HR)</p>
 </header>
 
-<section class="event">
-    <div class="event-box">
-        <h2>📅 Demo Details</h2>
-        <p><strong>Date:</strong> 15 February 2026</p>
-        <p><strong>Time:</strong> 10:00 AM IST</p>
-        <p><strong>Duration:</strong> 180 Minutes</p>
-        <p><strong>Platform:</strong> Google Meet</p>
+<main class="container">
+    
+    <div class="grid-row">
+        <aside class="sidebar">
+            <div class="card demo-details">
+                <h2><i class="fa-solid fa-calendar-check"></i> Demo Details</h2>
+                <p><strong>Date:</strong> 15 Feb 2026</p>
+                <p><strong>Time:</strong> 10:00 AM IST</p>
+                <p><strong>Duration:</strong> 180 Minutes</p>
+                
+                <div class="countdown" id="timer">Loading...</div>
+                
+                <div class="button-group">
+                    <a href="#" class="btn btn-calendar"><i class="fa-solid fa-calendar-plus"></i> Add to Calendar</a>
+                    <a href="https://t.me/+Vzq61YjJ-nBjYmY1" class="btn btn-telegram"><i class="fa-brands fa-telegram"></i> Join Telegram</a>
+                </div>
+                <p class="visitor-count">👀 Visitors: <span id="visitor-count">1,240</span></p>
+            </div>
 
-        <div class="countdown">
-            ⏳ Demo Starts In:
-            <span id="timer">Loading...</span>
-        </div>
+            <div class="card target-audience">
+                <h2><i class="fa-solid fa-user-graduate"></i> Who Should Join?</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> SAP Consultants (Functional & Tech)</li>
+                    <li><i class="fa-solid fa-check"></i> Solution & Enterprise Architects</li>
+                    <li><i class="fa-solid fa-check"></i> Business Analysts & Key Users</li>
+                    <li><i class="fa-solid fa-check"></i> Project Managers</li>
+                    <li><i class="fa-solid fa-check"></i> Students & SAP Aspirants</li>
+                </ul>
+            </div>
+        </aside>
 
-        <div class="buttons">
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE
-&text=SAP+S/4HANA+Enterprise+Structure+Demo
-&dates=20260215T043000Z/20260215T073000Z
-&details=End-to-End+SAP+Enterprise+Structure+Demo+for+All+Modules
-&location=Google+Meet"
-               target="_blank"
-               class="btn">
-                📅 Add to Google Calendar
-            </a>
+        <section class="main-content">
+            <div class="card image-card">
+                <h2><i class="fa-solid fa-sitemap"></i> Enterprise Structure Overview</h2>
+                <div class="sap-image-container">
+                    <img src="https://via.placeholder.com/800x400?text=SAP+Enterprise+Structure+Diagram" alt="SAP Structure" class="responsive-img">
+                </div>
+                <div class="learning-points-grid">
+                    <div class="point"><i class="fa-solid fa-circle-check"></i> Deep dive: Company Code, Plant, Sales Org</div>
+                    <div class="point"><i class="fa-solid fa-circle-check"></i> Logistics & HR Master Data integration</div>
+                    <div class="point"><i class="fa-solid fa-circle-check"></i> Hands-on Global Templates</div>
+                    <div class="point"><i class="fa-solid fa-circle-check"></i> Real-world Case Studies & QA</div>
+                </div>
+            </div>
 
-            <a href="https://t.me/+Vzq61YjJ-nBjYmY1"
-               target="_blank"
-               class="btn">
-                🚀 Join SAPExpert! Telegram Community
-            </a>
-        </div>
-
-        <p class="visitor">
-            👀 Visitors: <span id="visitor-count">Loading...</span>
-        </p>
+            <div class="card learning-list">
+                <h2><i class="fa-solid fa-lightbulb"></i> What You Will Learn</h2>
+                <div class="flex-list">
+                    <div class="list-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>End-to-end organizational units setup and relationship mapping.</span>
+                    </div>
+                    <div class="list-item">
+                        <i class="fa-solid fa-link"></i>
+                        <span>Integration across all modules (FI/SD, MM/PP, FICO).</span>
+                    </div>
+                    <div class="list-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Industry best practices for configuration.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
 
-<section class="registration">
-    <div class="reg-box">
-        <h2>🎓 Register for the Live Demo</h2>
-        <p>
-            Register below to attend the SAP S/4HANA Enterprise Structure
-            demo session. Confirmation email will be sent automatically.
-        </p>
-
-        <!-- 🔴 REPLACE iframe SRC WITH YOUR GOOGLE FORM EMBED LINK -->
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScXXXXXXXXXXXX/viewform?embedded=true"
-            width="100%"
-            height="720"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0">
-            Loading…
-        </iframe>
-
-        <div class="reg-note">
-            🔒 Your registration details are secure and private.
+    <section class="registration-row">
+        <div class="card reg-card">
+            <h2>🎓 Register for the Live Demo</h2>
+            <p>Secure your spot. A confirmation email with the link will be sent automatically.</p>
+            <div class="iframe-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXXXXXXXXXXXX/viewform?embedded=true" width="100%" height="600" frameborder="0">Loading…</iframe>
+            </div>
+            <p class="secure-note"><i class="fa-solid fa-lock"></i> Your registration details are secure and private.</p>
         </div>
-    </div>
-</section>
+    </section>
+
+</main>
 
 <footer>
     <p>© 2026 SAPExpert! Community | Learn • Implement • Grow</p>
 </footer>
 
-<!-- Visitor Counter -->
 <script>
-fetch('https://api.countapi.xyz/hit/sapexpert-demo/enterprise-structure')
-.then(res => res.json())
-.then(data => {
-    document.getElementById('visitor-count').innerText = data.value;
-});
-</script>
-
-<!-- Countdown Timer -->
-<script>
-const demoDate = new Date("Feb 15, 2026 10:00:00 GMT+0530").getTime();
-
+// Countdown Timer Logic
+const demoDate = new Date("2026-02-15T10:00:00+05:30").getTime();
 setInterval(() => {
     const now = new Date().getTime();
     const diff = demoDate - now;
-
     if (diff < 0) {
         document.getElementById("timer").innerHTML = "🚀 Live Now!";
         return;
     }
-
     const d = Math.floor(diff / (1000 * 60 * 60 * 24));
     const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const s = Math.floor((diff % (1000 * 60)) / 1000);
-
-    document.getElementById("timer").innerHTML =
-        `${d}d ${h}h ${m}m ${s}s`;
+    document.getElementById("timer").innerHTML = `${d}d ${h}h ${m}m ${s}s`;
 }, 1000);
 </script>
 
