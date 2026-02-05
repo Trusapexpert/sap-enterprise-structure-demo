@@ -35,7 +35,7 @@ header p {
 .event-box {
     background: #fff;
     padding: 25px;
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -48,6 +48,13 @@ header p {
 .event-box p {
     margin-bottom: 8px;
     font-size: 16px;
+}
+
+.countdown {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d93025;
 }
 
 .buttons {
@@ -63,20 +70,25 @@ header p {
     border-radius: 6px;
     font-weight: bold;
     text-align: center;
-}
-
-.primary {
-    background: #0a6ed1;
-    color: #fff;
-}
-
-.telegram {
-    background: #0088cc;
-    color: #fff;
+    color: #000;
+    background: #fbbc04; /* YELLOW */
 }
 
 .btn:hover {
-    opacity: 0.9;
+    background: #f9ab00;
+}
+
+.telegram {
+    background: #ffe082;
+}
+
+.calendar {
+    background: #fff176;
+}
+
+.visitor {
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 .structure {
