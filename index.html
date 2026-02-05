@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+fetch('https://api.countapi.xyz/hit/sapexpert-demo/registration')
+.then(response => response.json())
+.then(data => {
+    document.getElementById('visitor-count').innerText = data.value;
+});
+</script>
 <body>
 
 <header>
@@ -30,10 +37,10 @@
             </a>
         </div>
     </div>
-</section>
 <p class="visitor">
     👀 Visitors: <span id="visitor-count">Loading...</span>
 </p>
+</section>
 <section class="structure">
     <h2>📌 Enterprise Structure Coverage</h2>
     <p>This demo explains how all SAP modules are integrated using Enterprise Structure.</p>
